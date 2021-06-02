@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_colosseum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/colosseum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_colosseum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="One of the most recognizable sites in the world"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/iv_colosseum"
+        app:layout_constraintStart_toStartOf="@id/iv_colosseum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:text="The Colosseum"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_colosseum"
+        app:layout_constraintStart_toStartOf="@id/iv_colosseum" />
+
+    <LinearLayout
+        android:id="@+id/container_for_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_colosseum"
+
+        >
+
+        <ImageView
+            android:id="@+id/first_rectangle"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:background="#B3B3B3" />
+
+        <ImageView
+            android:id="@+id/second_rectangle"
+            android:layout_width="112dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B3B3B3" />
+
+        <ImageView
+            android:id="@+id/third_rectangle"
+            android:layout_width="112dp"
+            android:layout_height="95dp"
+            android:background="#B3B3B3" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:background="@drawable/camera"
+        android:padding="17dp"
+        app:layout_constraintBottom_toBottomOf="@id/container_for_img"
+        app:layout_constraintStart_toStartOf="@id/container_for_img" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:background="@drawable/google"
+        android:padding="17dp"
+        app:layout_constraintBottom_toBottomOf="@id/container_for_img"
+        app:layout_constraintEnd_toEndOf="@id/container_for_img" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contacts"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/container_for_img"
+        app:layout_constraintEnd_toEndOf="@id/container_for_img"
+        app:layout_constraintStart_toStartOf="@id/container_for_img"
+        app:layout_constraintTop_toTopOf="@id/container_for_img"
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_pass"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/rounded_btn"
+        android:backgroundTint="#B3B3B3"
+        android:text="Перейти"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="312"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btn_pass"
+        app:layout_constraintEnd_toEndOf="@id/btn_pass"
+        app:layout_constraintStart_toStartOf="@id/btn_pass"
+        app:layout_constraintTop_toBottomOf="@id/container_for_img"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

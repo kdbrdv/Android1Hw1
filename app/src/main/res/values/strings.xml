@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android1Hw1</string>
+    <string name="tv_welcome">Добро пожаловать!</string>
+    <string name="bt_sign_in">Войти</string>
+    <string name="tv_sign">Вход</string>
+    <string name="put_email">Введите вашу почту</string>
+    <string name="tv_forget_password">Забыл пароль?</string>
+    <string name="et_put_password">Введите пароль</string>
+    <string name="tv_put_it">Нажми сюда</string>
+</resources>
